@@ -21,6 +21,17 @@ function renderTasks(filter = 'all') {
       : !task.done
   );
 
+  if (filteredTasks.length === 0) {
+    const noTasksMessage = document.createElement('p');
+    noTasksMessage.textContent = 'No Tasks ';
+    noTasksMessage.style.textAlign = 'center';
+    noTasksMessage.style.color = '#888'; // يمكنك تخصيص اللون
+    noTasksMessage.style.fontSize = '1.2rem'; // حجم النص
+    noTasksMessage.style.marginTop = '20px'; // المسافة العلوية
+    todoList.appendChild(noTasksMessage);
+    return;
+  }
+
   filteredTasks.forEach((task, index) => {
     const li = document.createElement('li');
     li.className = task.done ? 'done' : '';

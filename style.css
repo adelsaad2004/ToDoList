@@ -6,9 +6,10 @@ body {
   }
   
   .container {
-    max-width: 600px;
+    width: 1200px;
     margin: 0 auto;
     text-align: center;
+
   }
   
   h1, h2 {
@@ -20,6 +21,9 @@ body {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    border: 2px solid rgb(139, 134, 134);
+    padding: 30px;
+   
   }
   
   .todo-input input {
@@ -50,6 +54,7 @@ body {
     margin: 5px;
     border-radius: 4px;
     cursor: pointer;
+    width: 32%;
   }
   
   .filter-buttons button:hover {
@@ -89,6 +94,7 @@ body {
     margin: 5px;
     border-radius: 4px;
     cursor: pointer;
+    width: 48.5%;
   }
   
   .action-buttons button:hover {
