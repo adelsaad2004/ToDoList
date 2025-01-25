@@ -4,31 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
   <title>Todo App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>TodoInput</h1>
+    <h1>Todo Input</h1>
+    
     <div class="todo-input">
       <input type="text" id="new-task" placeholder="New Todo">
+      <p id="error-message" class="error-message"></p>
+
       <button id="add-task-btn">
         <i class="fas fa-tasks"></i> Add new task
       </button>
     </div>
-    <h2>TodoList</h2>
+
+    <h2>Todo List</h2>
+
     <div class="filter-buttons">
       <button id="all-btn">All</button>
       <button id="done-btn">Done</button>
       <button id="todo-btn">Todo</button>
     </div>
+
     <ul id="todo-list"></ul>
+
     <div class="action-buttons">
       <button id="delete-done-btn">Delete done tasks</button>
       <button id="delete-all-btn">Delete all tasks</button>
     </div>
+
+    <div id="message" class="message"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
